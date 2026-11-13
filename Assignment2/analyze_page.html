@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mibstyle.css">
+        <title>Analyze Selfies</title>
+    </head> 
+
+    <body>
+        <header>
+
+        <nav class="site-nav">
+        <a href="mib_landing_page.html" class="logo">
+            <img src="MiB (1).png" alt="Muse in Beauty Logo">
+        </a>
+        <ul>
+            <li><a href="mib_home_page.html">Home</a></li>
+            <li><a href="analyze_page.html">Analyze</a></li>
+            <li><a href="recreate_page.html">Recreate</a></li>
+            <li><a href="style_page.html">Style</a></li>
+            <li><a href="add_products_page.html">Add Products</a></li>
+            <li><a href="share_preferences_page.html">Share Preferences</a></li>
+        </ul>
+        </nav>
+        
+        <a href="profile_page.html" class="profile-placeholder">
+            <img src="Pink profile placeholder (1).png" alt="Profile Picture">
+        </a>
+
+        </header>
+
+        <main class="layout">
+
+            <h1 class="main-heading">Analyze Selfies</h1>
+
+            <form id="analyze-form" method="post">
+
+                <fieldset class="add-photos">     <!-- Fieldset for adding files and opening camera but the buttons don't have any functionality yet -->
+                    <legend>♡&nbsp;&nbsp;&nbsp; Add Photos &nbsp;&nbsp;&nbsp;&nbsp;♡</legend>
+                    <button class="main-btns">Take Selfies</button>
+                    <button class="main-btns">Upload from Device</button>
+                </fieldset>
+
+                <fieldset class="look-details">   <!-- Fieldset for look type/deets -->
+                    <legend>♡&nbsp;&nbsp;&nbsp; Tell us about your desired MiB look &nbsp;&nbsp;&nbsp;&nbsp;♡</legend>
+
+                    <label for="look-type">Choose the type of look you want:</label>
+                    <select id="look-type" name="look-type">
+                        <optgroup label="Everyday Looks">
+                        <option value="no-makeup">"No Makeup" Makeup</option>
+                        <option value="office">Office or Professional</option>
+                        <option value="school">School or College</option>
+                        </optgroup>
+
+                        <optgroup label="Occasions">
+                        <option value="party">Party or Night Out</option>
+                        <option value="daytime">Daytime Event or Formal</option>
+                        <option value="wedding-bridal">Western Wedding or Bridal</option> 
+                        <option value="south-asian-bridal">South Asian Wedding or Bridal</option>   
+                        <option value="festival">Festive or Traditional</option>
+                        </optgroup>
+
+                        <optgroup label="Statement">
+                        <option value="bold">Bold or Dramatic</option>
+                        <option value="artistic">Artistic</option>
+                        <option value="editorial">Editorial or High Fashion Model</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="skill-level">Choose your skill level:</label>
+                    <select id="skill-level" name="skill-level">
+                        <option value="beginner">Beginner or New to Makeup</option>
+                        <option value="intermediate">Intermediate or Experienced</option>
+                        <option value="advanced">Advanced or Professional Makeup Artist</option>
+                    </select>
+
+                    <label for="skin-type">Choose your skin type:</label>
+                    <select id="skin-type" name="skin-type">
+                        <option value="normal">Normal</option>
+                        <option value="dry">Dry</option>
+                        <option value="oily">Oily</option>
+                        <option value="combination">Combination</option>
+                        <option value="sensitive">Sensitive</option>
+                    </select>
+
+                    <label for="extra-details">Add additional preferences:</label>
+                    <textarea id="extra-details" name="extra-details" rows="4" cols="50" placeholder="e.g. I like a matte finish with brown eyeliner and pink lips.. ">
+                    </textarea>
+
+                    <button class="main-btns">Analyze Muse</button>
+
+                </fieldset>
+
+            </form>
+
+                <aside class="help-panel">
+                    <h2>Follow our Lead!</h2>
+
+                    <ol class="help">
+
+                        <li>
+                            <details>
+                                <summary>Letting MiB analyze your face using your photos</summary>
+                                <p>You have the option to take photos directly on our platform or you
+                                    can upload your selfies from your device. Please ensure that you only
+                                    attach image files, not videos, PDFs or documents. We recommend uploading
+                                    a minimum of 3 selfies for the best results.
+                                </p>
+                            </details>
+                        </li>
+
+                        <li>
+                            <details>
+                                <summary>Choosing your preferred look</summary>
+                                <p>MiB can create a variety of looks for you, from everyday to special occasions.
+                                    You can choose the closest option from our pre-defined list so that our AI gives
+                                    you the most relevant recommendations for your desired look.
+                                </p>
+                            </details>
+                        </li>
+
+                        <li>
+                            <details>
+                                <summary>Telling us how good you are at makeup</summary>
+                                <p>MiB provides you with step-by-step instructions for your makeup look based on your skill 
+                                    level. The level of detail provided for each look is decided based on your comfort level.
+                                    For example, if you're experienced with makeup but haven't ever attempted an editorial look,
+                                    we recommend that you select the "Beginner" level for the most detailed instructions. If you
+                                    are a professional MUA doing a festive look, you can select the "Advanced" level for a more 
+                                    concise overview of the look.
+                                </p>
+                            </details>
+                        </li>
+
+                        <li>
+                            <details>
+                                <summary>Choosing your skin type</summary>
+                                <p>MiB incorporates your skin type information in its analysis to recommend you products and
+                                    techniques that best support a skin-like, airbrushed makeup finish on your face. The longevity 
+                                    of your makeup look can also be increased by the techniques and products our AI suggests, so if
+                                    your skin type tends to fluctuate based on seasonal weather, or is currently sensitive due to
+                                    the usage of certain skincare products, we recommend choosing your skin type accordingly. This is why
+                                    we support the selection of multiple options for this.
+                                </p>
+                            </details>
+                        </li>
+
+                        <li>
+                            <details>
+                                <summary>Writing about your additional preferences</summary>
+                                <p>This is a space for you to describe extra preferences for your makeup look. If you prefer a dewy finish,
+                                    tell us that. If you gravitate towards bolder lip colours or have a bright spring colour palette, let us know. 
+                                    If you are allergic to certain ingredients, please specify. Please do not use this space to ask questions or chat with the AI, this
+                                    is only for you to tell us what you expect from MiB's analysis.
+                                </p>
+                            </details>
+                        </li>
+
+                        <li>
+                            <details>
+                                <summary>Clicking "Analyze Muse"</summary>
+                                <p>Once you have completed the previous steps and provided us with all there is to know about yourself, this button will
+                                    initiate the analysis of your selfies and provide you with 3-5 looks that best match your expectations. You can select
+                                    any one and display its execution plan. Then grab a seat, look in the mirror, and working that beauty blender!
+                                </p>
+                            </details>
+                        </li>
+                       
+                    </ol>
+
+                    <h2>Tips</h2>
+                    <h3>Selfie tips for the best analysis</h3>
+
+                    <ul class="tips">
+
+                        <li>Start with a clean, dry, and moisturized face</li>
+
+                        <li>Stand near a window with lots of natural daylight</li>
+
+                        <li>Face the camera straight on, ensuring even lighting and no shadows</li>
+
+                        <li>Skip any heavy makeup or skin-smoothing beauty filters</li>
+
+                        <li>Take at least 3 selfies from different angles, including front, left, and right</li>
+
+                        <li>Keep a relaxed, neutral expression</li>
+                        
+                    </ul>
+
+                </aside>
+
+        </main>
+
+        <footer class="site-footer">
+
+            <a href="mib_landing_page.html" class="logo">
+             <img src="MiB (1).png" alt="Muse in Beauty Logo">
+            </a>
+
+            <nav class="site-nav">
+
+             <ul>
+                 <li><a href="#ourstory">About Us</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#privacypolicy">Privacy Policy</a></li>
+            </ul>
+
+             </nav>
+
+            <small>&copy; 2026 Muse in Beauty. All rights reserved.</small>
+
+        </footer>
+
+    </body>
+
+</html>
